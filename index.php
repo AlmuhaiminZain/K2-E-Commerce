@@ -116,6 +116,39 @@ $header->render();
             return new Productpria($data['id'], $data['nama_produk'], $data['harga'], $data['gambar']);
         }
     }
+//ini termasuk oop dengan jenis class objek, dimana yang menjadi classnya adalah "productpriaRepository" dan objeknya adalah  yang dimana data-data yang diambil
+//bersumber dari database "eccommerce" yang telah di import terlebih dahulu
+
+
+//NO 3 konsep yang dipakai adalah inheritance atau pewarisan:
+//class ProductpriaRepository
+//    {
+//        private $koneksi;
+
+//        public function __construct($koneksi)
+//      {
+//            $this->koneksi = $koneksi;
+//        }
+
+//        public function getProductById($productId)
+//        {
+//            $query = "SELECT * FROM tb_produk_pria WHERE id = $productId";
+//            $hasil = mysqli_query($this->koneksi, $query);
+//            $data = mysqli_fetch_array($hasil);
+
+//            return new Productpria($data['id'], $data['nama_produk'], $data['harga'], $data['gambar']);
+//        }
+//    }
+
+//class turunanProductpriaRepository extends  ProductpriaRepository{
+
+//    }
+
+
+//dari codingan diatas kita dapat melihat ada satu class turunan "turunanProductpriaRepository" yang ditandai dengan extends yang mengambil sifat sifat dari induknya
+//yaitu ProductpriaRepository
+
+
 
     // Penggunaan
     ?>
