@@ -288,6 +288,77 @@
         </div>
     </div>
 
+//no 3
+<?php
+    class beli
+    {
+        private $harga;
+        private $namabarang;
+        private $deskripsi;
+        private $gambar;
+    }
+    public function __construct($harga, $namabarang, $deskripsi, $gambar)
+            {
+                $this->harga = $harga;
+                $this->namabarang = $namabarang;
+                $this->$deskripsi = $deskripsi;
+                $this->gambar = $gambar;
+            }
+            public function getharga()
+            {
+                return $this->harga;
+            }
+
+            public function getnamabarang()
+            {
+                return $this->namabarang;
+            }
+
+            public function getdeskripsi()
+            {
+                return $this->deskripsi;
+            }
+
+            public function getgambar()
+            {
+                return $this->gambar;
+            }
+            class belirepo
+            {
+                private $koneksi;
+    
+                public function __construct($koneksi)
+                {
+                    $this->koneksi = $koneksi;
+                }
+    
+                public function getProductById($productId)
+                {
+                    $query = "SELECT * FROM tb_produk_pria WHERE id = $productId";
+                    $hasil = mysqli_query($this->koneksi, $query);
+                    $data = mysqli_fetch_array($hasil);
+    
+                    return new Productpria($data['id'], $data['nama_produk'], $data['harga'], $data['gambar']);
+                }
+            }
+            class jual
+            {
+                private $koneksi;
+                public function getProductById
+            }
+
+
+?>
+
+
+
+//no 4
+
+<?php
+
+
+
+?>
     <!-- Footer End -->
 
 

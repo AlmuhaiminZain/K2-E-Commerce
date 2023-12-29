@@ -22,7 +22,7 @@ $header->render();
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Men
                                         Fashion</h1>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Provides a variety of fashion choices for men</p>
-                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="shop.php">Shop Now</a>
+                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="shop.php">selamat ujian</a>
                                 </div>
                             </div>
                         </div>
